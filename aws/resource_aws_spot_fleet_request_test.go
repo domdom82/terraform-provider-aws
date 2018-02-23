@@ -580,7 +580,6 @@ resource "aws_spot_fleet_request" "foo" {
     iam_fleet_role = "${aws_iam_role.test-role.arn}"
     spot_price = "0.027"
     target_capacity = 2
-    valid_until = "2019-11-04T20:44:20Z"
     terminate_instances_with_expiration = true
     wait_for_fulfillment = true
     launch_specification {
@@ -655,7 +654,6 @@ resource "aws_spot_fleet_request" "foo" {
     iam_fleet_role = "${aws_iam_role.test-role.arn}"
     spot_price = "0.005"
     target_capacity = 2
-    valid_until = "2019-11-04T20:44:20Z"
     terminate_instances_with_expiration = true
     instance_interruption_behaviour = "stop"
     wait_for_fulfillment = true
@@ -731,7 +729,6 @@ resource "aws_spot_fleet_request" "foo" {
     iam_fleet_role = "${aws_iam_role.test-role.arn}"
     spot_price = "0.01"
     target_capacity = 2
-    valid_until = "2019-11-04T20:44:20Z"
     terminate_instances_with_expiration = true
     wait_for_fulfillment = true
     launch_specification {
@@ -806,7 +803,6 @@ resource "aws_spot_fleet_request" "foo" {
     iam_fleet_role = "${aws_iam_role.test-role.arn}"
     spot_price = "0.005"
     target_capacity = 2
-    valid_until = "2019-11-04T20:44:20Z"
     terminate_instances_with_expiration = true
     wait_for_fulfillment = true
     launch_specification {
@@ -907,7 +903,6 @@ resource "aws_spot_fleet_request" "foo" {
     iam_fleet_role = "${aws_iam_role.test-role.arn}"
     spot_price = "0.03"
     target_capacity = 4
-    valid_until = "2019-11-04T20:44:20Z"
     terminate_instances_with_expiration = true
     wait_for_fulfillment = true
     launch_specification {
@@ -989,7 +984,6 @@ resource "aws_spot_fleet_request" "foo" {
     iam_fleet_role = "${aws_iam_role.test-role.arn}"
     spot_price = "0.025"
     target_capacity = 2
-    valid_until = "2019-11-04T20:44:20Z"
     terminate_instances_with_expiration = true
     wait_for_fulfillment = true
     launch_specification {
@@ -1084,7 +1078,6 @@ resource "aws_spot_fleet_request" "foo" {
     iam_fleet_role = "${aws_iam_role.test-role.arn}"
     spot_price = "0.035"
     target_capacity = 4
-    valid_until = "2019-11-04T20:44:20Z"
     terminate_instances_with_expiration = true
     wait_for_fulfillment = true
     launch_specification {
@@ -1166,7 +1159,6 @@ resource "aws_spot_fleet_request" "foo" {
     iam_fleet_role = "${aws_iam_role.test-role.arn}"
     spot_price = "0.035"
     target_capacity = 2
-    valid_until = "2019-11-04T20:44:20Z"
     terminate_instances_with_expiration = true
     wait_for_fulfillment = true
     launch_specification {
@@ -1248,8 +1240,7 @@ EOF
 resource "aws_spot_fleet_request" "foo" {
     iam_fleet_role = "${aws_iam_role.test-role.arn}"
     spot_price = "0.7"
-    target_capacity = 30
-    valid_until = "2019-11-04T20:44:20Z"
+    target_capacity = 3
     allocation_strategy = "diversified"
     terminate_instances_with_expiration = true
     wait_for_fulfillment = true
@@ -1338,7 +1329,6 @@ resource "aws_spot_fleet_request" "foo" {
     iam_fleet_role = "${aws_iam_role.test-role.arn}"
     spot_price = "0.7"
     target_capacity = 10
-    valid_until = "2019-11-04T20:44:20Z"
     terminate_instances_with_expiration = true
     wait_for_fulfillment = true
     launch_specification {
@@ -1417,7 +1407,6 @@ resource "aws_spot_fleet_request" "foo" {
     iam_fleet_role = "${aws_iam_role.test-role.arn}"
     spot_price = "0.005"
     target_capacity = 1
-    valid_until = "2019-11-04T20:44:20Z"
     terminate_instances_with_expiration = true
     wait_for_fulfillment = true
     launch_specification {
@@ -1498,7 +1487,6 @@ resource "aws_spot_fleet_request" "foo" {
     iam_fleet_role = "${aws_iam_role.test-role.arn}"
     spot_price = "0.005"
     target_capacity = 1
-    valid_until = "2019-11-04T20:44:20Z"
     terminate_instances_with_expiration = true
     wait_for_fulfillment = true
     launch_specification {
@@ -1576,7 +1564,6 @@ resource "aws_spot_fleet_request" "foo" {
     iam_fleet_role = "${aws_iam_role.test-role.arn}"
     spot_price = "0.005"
     target_capacity = 2
-    valid_until = "2019-11-04T20:44:20Z"
     terminate_instances_with_expiration = true
     launch_specification {
         instance_type = "m1.small"
